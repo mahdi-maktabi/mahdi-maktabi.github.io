@@ -1,0 +1,27 @@
+---
+title: "My Lit Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Mahdi's lit website
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnFkMWtvMGhwdDFpd2Jwc3k2Z3V1cnVqOGZjNjliM3hueWJldWxuNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9ohlKnRDAmotG/giphy.gif)
+
+
+This is an aweseome website about data science.
+
+Sometimes I use [google](https://www.google.com/) to do data science when I'm stuck.
+
+This is how to inset a picture into a website.
+
+![](images/IMG_5158.jpeg) 
+
+
+If you'd like to learn more about this website, visit [this page](about.html). Note, all these are case-sensitive.
+
+Visit this page for [fonts](https://fontawesome.com). 
+
+Visit this page for [themes](https://bootswatch.com/3/)
