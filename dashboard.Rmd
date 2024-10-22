@@ -1,24 +1,17 @@
 ---
-title: "Plotly"
+title: "Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-# Here are some plots
-
-Today we're making interactive plots on plotly. We'll make examples using the NYC airbnb dataset.
-
-```{r}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-```
 
-Do some initial data cleaning / subsetting.
-
-```{r}
 data("nyc_airbnb")
 
 nyc_airbnb = 
@@ -33,8 +26,10 @@ nyc_airbnb =
     price %in% 100:500)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-Use plotly to make some quit plots
+### Chart A
 
 ```{r}
 nyc_airbnb |>
@@ -45,8 +40,10 @@ nyc_airbnb |>
     color = ~price, text = ~text_label, alpha = 0.5)
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
 
-Next is -- box plot.
+### Chart B
 
 ```{r}
 nyc_airbnb |> 
@@ -54,31 +51,12 @@ nyc_airbnb |>
    plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
 ```
 
-
-Next is -- bar chart with number of rentals.
+### Chart C
 
 ```{r}
 nyc_airbnb |> 
   count(neighbourhood) |> 
   mutate(neighbourhood = fct_reorder(neighbourhood, n)) |> 
   plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
-```
-
-
-```{r}
-plot_ly(
-  z = volcano, type = "heatmap"
-)
-```
-
-
-Here is a chloropleth:
-
-```{r}
-plot_ly (
-type = "choropleth",
-locations = c("AZ", "CA", "VT") , locationmode = "USA-states" , colorscale = "Viridis",
-z = c( 10, 20, 40 )) %>%
-layout ( geo = list (scope = "usa"))
 ```
 
