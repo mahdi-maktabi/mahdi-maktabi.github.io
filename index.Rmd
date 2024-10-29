@@ -1,82 +1,12 @@
 ---
-title: "Mahdi Maktabi"
+title: "Welcome!"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-## Education
+![](Mahdi.jpeg)
 
-**Columbia University, Mailman School of Public Health**, New York, NY
+Hello! My name is Mahdi Maktabi. I am a second-year MPH student at Columbia University, Mailman School of Public Health. I am in the Department of Epidemiology with a certificate in Infectious Disease Epidemiology.
 
-* MPH Candidate, Epidemiology
-* Certificate: Infectious Disease Epidemiology
-
-**University of Colorado, Anschutz Medical Campus**, Aurora, CO
-
-* *Graduate-Level Coursework (non-degree)*: Overview of Immunology, Fundamentals of Statistics and Data Science for Scientists
-
-
-
-## Professional Experience
-
-**Next-Generation Intern**,
-ICAP at Columbia University, New York, NY
-
-* ***Radiant-Moms Project***
-  * Organized, cleaned, and analyzed anonymous online survey responses from pregnant and breastfeeding people, healthcare providers, and stakeholders to evaluate feasibility, acceptability, and demand for novel shorter TB treatment regimens. 
-  * Developed collection instruments for a future Discrete Choice Experiment (DCE) and supported IRB submissions and protocol development to advocate for including pregnant women in TB clinical trials.
-
-* ***Community Outreach and Engagement***
-  * Developed community recruitment and engagement strategies for ongoing clinical studies including flyers, infographics, poster presentations, and social media content to effectively reach and inform target populations.
-  
-**Professional Research Assistant** with Dr. Rosemary Rochford,
-University of Colorado, Anschutz Medical Campus, Aurora, CO
-
-* ***G6PDd Hemolytic Toxicity Project***
-  * Facilitated and performed monthly assays using a humanized mouse model to test the potential hemolytic toxicity of antimalarial drugs.
-  * Collected, organized, and analyzed data to create reports for funders and collaborators including the University of Washington, Walter Reed Army Institute of Research, and Medicines for Malaria Venture.
-  * Developed research protocols for use of human and mouse samples.
-  
-* ***Laboratory and Project Management***
-  * Assisted the PI in the preparation of documents for submission to IACUC and IRB for protocol approval and subsequent amendments.
-  * Researched and reviewed literature related to key scientific questions to develop background knowledge for feasible research approaches and experimental designs.
-  * Presented research findings quarterly at laboratory staff meetings.
-  * Performed personnel management functions including supervising and planning the work of junior laboratory researchers as well as supported the hiring and training of new employees and graduate students.
-
-
-## Publications
-
-Pottenger, A. E. et al. including **Mahdi Maktabi**. “Liver-targeted polymeric prodrugs delivered subcutaneously improve tafenoquine therapeutic window for malaria radical cure.” *Science Advances*, 10(16). 2024.
-
-Angela Nalwoga, Katherine R. Sabourin, Wendell Miley, Conner Jackson, **Mahdi Maktabi**, Nazzarena Labo, Joseph Mugisha, Denise Whitby, Rosemary Rochford, and Robert Newton. “Plasmodium falciparum malaria is associated with increased KSHV seropositivity and higher KSHV antibody breadth and magnitude: results of a case-control study from rural Uganda.” *Journal of Infectious Diseases*. 2023. 
-
-Siobhan Flaherty, Pamela Strauch, **Mahdi Maktabi**, Brandon S. Pybus, Gregory Reichard, Larry A. Walker, and Rosemary Rochford. “Mechanisms of 8-aminoquinoline induced haemolytic toxicity in a G6PDd humanized mouse model.” *Journal of Cellular and Molecular Medicine*. 2022. 
-
-Srinivasan, S. et al. including **Mahdi Maktabi**. "Liver-targeted polymeric prodrugs of 8-aminoquinolines for malaria radical cure.” *Journal of Controlled Release*. 2021.
-
-Derek S. Mason, Siobhan Flaherty, Conner Jackson, Emmily Koech, Gabriela Samayoa-Reyes, **Mahdi Maktabi**, Arlene Dent, Sidney Ogolla, and Rosemary Rochford. “Measles and EBV: A Tale of Two Viruses from an Infant Cohort Study in Western Kenya.” 2021 American Society of Tropical Medicine & Hygiene. Poster Presentation. (Pending publication).
-
-Gabriela Samayoa-Reyes, Sidney Ogolla, Bonface Ariera, **Mahdi Maktabi**, Kenney, S., and Rosemary Rochford. “Effect of malaria on EBV persistence in Kenyan children.” (Pending publication).
-
-
-## Extracurricular
-
-**Mentor and Tutor**, Casa de la Esperanza Learning Center, Longmont, CO
-
-* Helped students and their families understand the value of pursuing a higher education as well as navigating the complex college application process.
-* Tutored K-12 students in Math and Humanities courses.
-
-**Volunteer**, UCHealth University of Colorado Hospital, Aurora, CO
-
-* Supported staff in the Cardiothoracic ICU in caring for patients, being a resource for family members of patients, and providing administrative assistance.
-* Supported patients, families, and visitors by providing hospital information, directions, and assistance.
-
-
-## Relavant Skills and Interests
-
-* Proficient in Microsoft Office, RStudio, SAS, Macs, PCs, Adobe, Photoshop, and Final Cut Pro
-* Fluent in English, Conversational Dari
-* Ability to manage multiple projects and tasks simultaneously and professionally
-* Interests: Basketball, running, piano, content creation and streaming, and baking
