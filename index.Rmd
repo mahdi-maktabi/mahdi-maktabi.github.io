@@ -15,13 +15,13 @@ output:
 
 **University of Colorado, Anschutz Medical Campus**, Aurora, CO
 
-* ***Graduate-Level Coursework (non-degree)***: Overview of Immunology, Fundamentals of Statistics and Data Science for Scientists
+* *Graduate-Level Coursework (non-degree)*: Overview of Immunology, Fundamentals of Statistics and Data Science for Scientists
 
 
 
 ## Professional Experience
 
-**Next-Generation Intern**
+**Next-Generation Intern**,
 ICAP at Columbia University, New York, NY
 
 * ***Radiant-Moms Project***
@@ -31,7 +31,7 @@ ICAP at Columbia University, New York, NY
 * ***Community Outreach and Engagement***
   * Developed community recruitment and engagement strategies for ongoing clinical studies including flyers, infographics, poster presentations, and social media content to effectively reach and inform target populations.
   
-**Professional Research Assistant** with Dr. Rosemary Rochford
+**Professional Research Assistant** with Dr. Rosemary Rochford,
 University of Colorado, Anschutz Medical Campus, Aurora, CO
 
 * ***G6PDd Hemolytic Toxicity Project***
@@ -48,13 +48,13 @@ University of Colorado, Anschutz Medical Campus, Aurora, CO
 
 ## Publications
 
-Pottenger, A. E. et al. including **Mahdi Maktabi**. “Liver-targeted polymeric prodrugs delivered subcutaneously improve tafenoquine therapeutic window for malaria radical cure.” ***Science Advances***, 10(16). 2024.
+Pottenger, A. E. et al. including **Mahdi Maktabi**. “Liver-targeted polymeric prodrugs delivered subcutaneously improve tafenoquine therapeutic window for malaria radical cure.” *Science Advances*, 10(16). 2024.
 
-Angela Nalwoga, Katherine R. Sabourin, Wendell Miley, Conner Jackson, **Mahdi Maktabi**, Nazzarena Labo, Joseph Mugisha, Denise Whitby, Rosemary Rochford, and Robert Newton. “Plasmodium falciparum malaria is associated with increased KSHV seropositivity and higher KSHV antibody breadth and magnitude: results of a case-control study from rural Uganda.” ***Journal of Infectious Diseases***. 2023. 
+Angela Nalwoga, Katherine R. Sabourin, Wendell Miley, Conner Jackson, **Mahdi Maktabi**, Nazzarena Labo, Joseph Mugisha, Denise Whitby, Rosemary Rochford, and Robert Newton. “Plasmodium falciparum malaria is associated with increased KSHV seropositivity and higher KSHV antibody breadth and magnitude: results of a case-control study from rural Uganda.” *Journal of Infectious Diseases*. 2023. 
 
-Siobhan Flaherty, Pamela Strauch, **Mahdi Maktabi**, Brandon S. Pybus, Gregory Reichard, Larry A. Walker, and Rosemary Rochford. “Mechanisms of 8-aminoquinoline induced haemolytic toxicity in a G6PDd humanized mouse model.” ***Journal of Cellular and Molecular Medicine***. 2022. 
+Siobhan Flaherty, Pamela Strauch, **Mahdi Maktabi**, Brandon S. Pybus, Gregory Reichard, Larry A. Walker, and Rosemary Rochford. “Mechanisms of 8-aminoquinoline induced haemolytic toxicity in a G6PDd humanized mouse model.” *Journal of Cellular and Molecular Medicine*. 2022. 
 
-Srinivasan, S. et al. including **Mahdi Maktabi**. "Liver-targeted polymeric prodrugs of 8-aminoquinolines for malaria radical cure.” ***Journal of Controlled Release***. 2021.
+Srinivasan, S. et al. including **Mahdi Maktabi**. "Liver-targeted polymeric prodrugs of 8-aminoquinolines for malaria radical cure.” *Journal of Controlled Release*. 2021.
 
 Derek S. Mason, Siobhan Flaherty, Conner Jackson, Emmily Koech, Gabriela Samayoa-Reyes, **Mahdi Maktabi**, Arlene Dent, Sidney Ogolla, and Rosemary Rochford. “Measles and EBV: A Tale of Two Viruses from an Infant Cohort Study in Western Kenya.” 2021 American Society of Tropical Medicine & Hygiene. Poster Presentation. (Pending publication).
 
