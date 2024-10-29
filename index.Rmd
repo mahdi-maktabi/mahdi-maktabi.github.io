@@ -6,7 +6,8 @@ output:
     toc_float: true
 ---
 
-![](images/Mahdi.jpeg)
+<img src="images/Mahdi.jpeg" style="width:50%;">
+
 
 Hello! My name is Mahdi Maktabi. I am a second-year MPH student at Columbia University, Mailman School of Public Health. I am in the Department of Epidemiology with a certificate in Infectious Disease Epidemiology.
 
