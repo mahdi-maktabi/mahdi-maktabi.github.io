@@ -1,84 +1,94 @@
 ---
-title: "Plotly"
+title: "Making Interactive Plots"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# Here are some plots
+# Plotly
 
-Today we're making interactive plots on plotly. We'll make examples using the NYC airbnb dataset.
+I am going to be making interactive plots using `Plotly` using the NYC DOHMH data on [NYC Restaurant Inspections](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data).
 
-```{r}
+```{r, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
-Do some initial data cleaning / subsetting.
+
+### Making Bar Graphs
+
+Initial data cleaning, filtering, and making bar graphs:
 
 ```{r}
-data("nyc_airbnb")
+data("rest_inspec")
 
-nyc_airbnb = 
-  nyc_airbnb |> 
-  mutate(rating = review_scores_location / 2) |>
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) |>
+rest_inspec |> 
   filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)
-```
-
-
-Use plotly to make some quit plots
-
-```{r}
-nyc_airbnb |>
-  mutate(text_label = 
-           str_c("Price: $", price, "\nRating: ", rating)) |> #adding \n creates a new line for the label
+    grade %in% c("A", "B", "C"), boro != "Missing",
+    str_detect(dba, "[Cc][Oo][Ff][Ff][Ee][Ee]")) |> 
+  group_by(boro, grade) |> 
+  count(boro) |> 
+  mutate(
+    boro = str_to_title(boro),
+    boro = fct_reorder(boro, n)) |> 
   plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~price, text = ~text_label, alpha = 0.5)
+    x = ~boro, y = ~n, type = "bar", color = ~grade) |> 
+  layout(barmode = "stack")
 ```
 
+Notable Steps:
 
-Next is -- box plot.
+* I am removing inspections with scores other than `A`, `B`, or `C`, and remove entries with missing borough information. 
+* I am filtering based on just `coffee shops` and examining grades based on borough. 
+* Visualize data by first making a bar graph showing the **total number of coffee shops based on borough**. You can hover over each bar to see the number of coffee shops with `A`, `B`, or `C` grades in that borough.
+
+
+This next bar graph will show the **top 10 most common critical violations for coffee shops by borough**:
 
 ```{r}
-nyc_airbnb |> 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
-   plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+rest_inspec |> 
+  filter(
+    critical_flag == "Critical",
+    grade %in% c("A", "B", "C"), boro != "Missing",
+    str_detect(dba, "[Cc][Oo][Ff][Ff][Ee][Ee]")) |> 
+  group_by(boro, violation_code, violation_description) |> 
+  summarize(n = n(), .groups = "drop") |> 
+  group_by(boro) |> 
+  slice_max(n, n = 5) |> 
+  mutate(text_label = str_c("Violation: ", violation_description)) |> 
+  plot_ly(x = ~reorder(violation_code, n), y = ~n, type = "bar", color = ~boro, 
+    text = ~text_label) |> 
+  layout(
+    xaxis = list(title = "Violation Code"),
+    yaxis = list(title = "Count"),
+    barmode = "stack")
 ```
 
+Notable Steps:
 
-Next is -- bar chart with number of rentals.
+* I filtered based on inspections with a `critical` flag, scores only with `A`, `B`, or `C`, entries with borough information, coffee shops, 
+* **NOTE**: you can hover over each bar to see the violation description.
+
+
+### Making a Line Plot
 
 ```{r}
-nyc_airbnb |> 
-  count(neighbourhood) |> 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) |> 
-  plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
+rest_inspec |> 
+  filter(critical_flag == "Critical",
+         grade %in% c("A", "B", "C"), boro != "Missing",
+         grade_date >= as.Date("2015-01-01"), 
+         grade_date <= as.Date("2015-12-31")) |> 
+  count(boro, grade_date) |> 
+  plot_ly(
+    x = ~grade_date, y = ~n, type = "scatter", mode = "lines", color = ~boro)
 ```
 
 
-```{r}
-plot_ly(
-  z = volcano, type = "heatmap"
-)
-```
+This figure shows the **trend of critical violations for all restaurants across all boroughs in 2015**. 
 
+Notable steps:
 
-Here is a chloropleth:
-
-```{r}
-plot_ly (
-type = "choropleth",
-locations = c("AZ", "CA", "VT") , locationmode = "USA-states" , colorscale = "Viridis",
-z = c( 10, 20, 40 )) %>%
-layout ( geo = list (scope = "usa"))
-```
-
+* I only included inspections that had a critical flag, in the year of 2015, those that had a grade A, B, or C, and had a borough identified. 
+* **Note**: You can hover over the line to see the number of critical violations for the specific date.

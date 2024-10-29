@@ -11,3 +11,9 @@ output:
 
 Hello! My name is Mahdi Maktabi. I am a second-year MPH student at Columbia University, Mailman School of Public Health. I am in the Department of Epidemiology with a certificate in Infectious Disease Epidemiology.
 
+Please feel free to check out:
+
+* [About Me](https://mahdi-maktabi.github.io/about.html) to find my educational and professional experience.
+* [Dashboard](https://mahdi-maktabi.github.io/dashboard.html) to find an example of data visualization using the New York City Department of Health and Mental Hygiene (DOHMH) publicly available data on [NYC Restaurant Inspections](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data).
+  * The codes for producing these figures can be found under [Plotly](https://mahdi-maktabi.github.io/plotly.html).
+
