@@ -80,8 +80,7 @@ Derek S. Mason, Siobhan Flaherty, Conner Jackson, Emmily Koech, Gabriela Samayoa
 * Proficient in Microsoft Office, RStudio, SAS, Macs, PCs, Adobe, Photoshop, and Final Cut Pro
 * Fluent in English, Conversational Dari
 * Ability to manage multiple projects and tasks simultaneously and professionally
-* Interests: Basketball, running, piano, content creation and streaming, and baking
+* Interests: Basketball, running, piano, content creation and streaming, and cooking
 
 
-This website was made as an example in [Home](https://mahdi-maktabi.github.io/index.html) for "Making Websites". I'm making in RMD and will use GitHub for hosting.
 
